@@ -28,6 +28,6 @@ public class PlayerVisuals : MonoBehaviour
         _animator.SetBool(_isMovingHash, _playerController.IsMoving());
 
         // update body looking direction
-        _renderer.flipX = _burner.IsGunPointingLeft();
+        _renderer.flipX = _burner.IsPointingLeft();
     }
 }

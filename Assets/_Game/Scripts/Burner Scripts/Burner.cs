@@ -16,7 +16,7 @@ public class Burner : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg);
     }
 
-    public bool IsGunPointingLeft()
+    public bool IsPointingLeft()
     {
         return Mathf.Abs(transform.eulerAngles.z) > 90f && Mathf.Abs(transform.eulerAngles.z) < 270f;
     }

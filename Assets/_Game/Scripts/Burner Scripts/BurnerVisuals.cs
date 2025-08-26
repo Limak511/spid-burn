@@ -16,6 +16,6 @@ public class BurnerVisuals : MonoBehaviour
     private void Update()
     {
         // handle flipping gun when pointing in certain directions
-        _renderer.flipY = _burner.IsGunPointingLeft();
+        _renderer.flipY = _burner.IsPointingLeft();
     }
 }
