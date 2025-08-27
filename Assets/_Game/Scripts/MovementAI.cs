@@ -49,6 +49,8 @@ public class MovementAI : MonoBehaviour
         }
     }
 
+
+
     public void Move(Rigidbody2D rb, Vector2 targetPosition, float repathRate = .4f)
     {
         if (Time.time > _lastRepath + repathRate && _seeker.IsDone())
@@ -87,6 +89,8 @@ public class MovementAI : MonoBehaviour
         Vector2 direction = ((Vector2)path.vectorPath[_currentWaypoint] - (Vector2)transform.position).normalized;
         _movementData.Move(rb, direction);
     }
+
+
 
     public Vector2 GetRandomSpotOnAStarGrid()
     {
