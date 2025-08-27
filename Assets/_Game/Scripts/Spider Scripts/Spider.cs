@@ -32,7 +32,6 @@ public class Spider : MonoBehaviour
 
     private void Update()
     {
-
         // If close to patrol spot, get new patrol spot position
         if (Vector2.Distance(transform.position, _patrolSpot) < _patrolSpotVisionRange)
         {
