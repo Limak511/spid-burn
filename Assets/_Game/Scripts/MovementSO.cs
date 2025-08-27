@@ -3,17 +3,14 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New_Movement", menuName = "Game Data/Movement")]
 public class MovementSO : ScriptableObject
 {
-    [SerializeField] private float _maxSpeed;
-    [SerializeField] private float _acceleration;
-    [SerializeField] private float _decceleration;
+    [SerializeField] private float _maxSpeed = 10.8f;
+    [SerializeField] private float _acceleration = 8.82f;
+    [SerializeField] private float _decceleration = 1.84f;
 
     public void Move(Rigidbody2D rb2d, Vector2 moveDir)
     {
         //Calculate the direction we want to move in and our desired velocity
         var targetSpeed = moveDir * _maxSpeed;
-
-        //We can reduce are control using Lerp() this smooths changes to are direction and speed
-        //targetSpeed = Mathf.Lerp(rb2d.linearVelocity.x, targetSpeed, lerpAmount);
         
         // Calculate acceleration rate
         float accelRateX = (Mathf.Abs(targetSpeed.x) > 0.01f) ? _acceleration : _decceleration;
