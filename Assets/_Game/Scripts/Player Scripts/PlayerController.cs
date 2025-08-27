@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed;
+    [SerializeField] private MovementSO _movementData;
     private Rigidbody2D _rb2d;
     private Vector2 _moveInput;
 
@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb2d.AddForce(_moveInput * _moveSpeed);
+        _movementData.Move(_rb2d, _moveInput);
     }
 
     private void Update()
