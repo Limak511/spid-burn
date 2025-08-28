@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,9 +6,14 @@ public class Burner : MonoBehaviour
 {
     [SerializeField] private float _fireSpreadAngle = 45f;
     [SerializeField] private Transform _firePoint;
+    private Vector3 _firePointLocalPosition;
     [SerializeField] private int _fireRaysCount = 5;
     [SerializeField] private float _fireRange = 2f;
-    private Vector3 _firePointLocalPosition;
+
+    public float FireSpreadAngle => _fireSpreadAngle;
+
+
+
 
     private void Awake()
     {
