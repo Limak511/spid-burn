@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 _moveInput;
 
 
-
     private void Awake()
     {
         _rb2d = GetComponent<Rigidbody2D>();
