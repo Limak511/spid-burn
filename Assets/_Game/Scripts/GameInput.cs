@@ -1,11 +1,11 @@
+using System;
 using UnityEngine;
 
 public class GameInput : MonoBehaviour
 {
     public static GameInput Instance;
     private InputSystem_Actions _inputActions;
-
-
+    
 
     private void Awake()
     {
@@ -19,8 +19,6 @@ public class GameInput : MonoBehaviour
         _inputActions.Dispose();
     }
 
-
-
     public Vector2 GetPlayerMoveInput()
     {
         return _inputActions.Player.Move.ReadValue<Vector2>();
@@ -31,5 +29,10 @@ public class GameInput : MonoBehaviour
         var mouseScreenPosition = _inputActions.Player.MoveGun.ReadValue<Vector2>();
         var mouseWorldPosition = Camera.main.ScreenToWorldPoint(mouseScreenPosition);
         return mouseWorldPosition;
+    }
+
+    public bool IsPlayerAttackPressed()
+    {
+        return _inputActions.Player.Attack.IsPressed();
     }
 }
