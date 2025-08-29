@@ -3,13 +3,27 @@ using UnityEngine;
 
 public class Burner : MonoBehaviour
 {
-    [SerializeField] private float _fireSpreadAngle = 45f;
+    [Header("Fire Point")]
     [SerializeField] private Transform _firePoint;
     private Vector3 _firePointLocalPosition;
+
+    [Header("Fire Range and Raycast")]
+    [SerializeField] private float _fireSpreadAngle = 45f;
     [SerializeField] private int _fireRaysCount = 5;
     [SerializeField] private float _fireRange = 2f;
     [SerializeField] private float _fireRangeExpandSpeed = .5f;
     private float _fireRangeLerp = 0f;
+
+    [Header("Fire Attack Cooldown")]
+    [SerializeField] private float _attackTimerCooldown = .5f;
+    private float _attackTimer = 0f;
+
+    [Header("Fire Damage")]
+    [SerializeField] private int _burnDamage;
+
+    [Header("Gizmos")]
+    [Tooltip("Show fire rays always, even when attack is not pressed")]
+    [SerializeField] private bool _showRays = false;
 
     public float FireSpreadAngle => _fireSpreadAngle;
 
@@ -22,6 +36,12 @@ public class Burner : MonoBehaviour
 
     private void Update()
     {
+        // Timer for attack cooldown
+        if (_attackTimer > 0f)
+        {
+            _attackTimer -= Time.deltaTime;
+        }
+
         var mousePosition = GameInput.Instance.GetPlayerWorldMousePosition();
         UpdateBurnerLookAt(mousePosition);
         UpdateFirePointLocalPosition();
@@ -41,6 +61,13 @@ public class Burner : MonoBehaviour
 
     private void Burn()
     {
+        // Prevents attacking every frame
+        if (_attackTimer > 0f)
+        {
+            return;
+        }
+        _attackTimer = _attackTimerCooldown;
+
         // Shoot raycasts and collect list without duplicated hits
         var hitObjects = new List<GameObject>();
         var hits = new List<RaycastHit2D>();
@@ -64,9 +91,9 @@ public class Burner : MonoBehaviour
         foreach (var hit in hits)
         {
             // Burn when object is spider (burnable)
-            if (hit.transform.TryGetComponent(out Spider spider))
+            if (hit.transform.TryGetComponent(out IBurnable burnable))
             {
-                Debug.Log($"Spider hit | {spider.gameObject}", spider.gameObject);
+                burnable.Burn(_burnDamage);
             }
         }
     }
@@ -109,10 +136,7 @@ public class Burner : MonoBehaviour
 
 
 
-    [Header("Gizmos")]
-    [Tooltip("Show fire rays always, even when attack is not pressed")]
-    [SerializeField] private bool _showRays = false;
-
+    // GIZMOS
     private void OnDrawGizmos()
     {
         if (Application.isPlaying)

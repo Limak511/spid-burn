@@ -5157,11 +5157,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539d231c5d98b834aab089877c2aa680, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Burner
-  _fireSpreadAngle: 42.6
   _firePoint: {fileID: 6555830594189752604}
+  _fireSpreadAngle: 42.6
   _fireRaysCount: 5
   _fireRange: 1.12
   _fireRangeExpandSpeed: 0.15
+  _attackTimerCooldown: 0.35
+  _burnDamage: 1
   _showRays: 0
 --- !u!114 &4051214964460189941
 MonoBehaviour:

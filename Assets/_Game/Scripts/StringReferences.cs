@@ -5,4 +5,5 @@ public static class StringReferences
 
     // Spider
     public const string SPIDER___IS_MOVING = "isMoving";
+    public const string SPIDER___DIE = "Die";
 }
