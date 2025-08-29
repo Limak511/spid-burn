@@ -9,7 +9,6 @@ public class SpiderVisuals : MonoBehaviour
     private Animator _animator;
     private Spider _spider;
     private SpriteRenderer _renderer;
-    private bool _hasDied = false;
 
     private void Awake()
     {
@@ -42,7 +41,6 @@ public class SpiderVisuals : MonoBehaviour
 
     private void Die()
     {
-        _hasDied = true;
         _animator.CrossFade(_dieHash, 0f, 0);
     }
 }
