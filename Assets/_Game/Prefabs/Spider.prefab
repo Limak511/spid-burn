@@ -5243,7 +5243,7 @@ MonoBehaviour:
   <PatrolPlayerDetector>k__BackingField: {fileID: 8109299600925163561}
   <WaitBeforeAttackTimerCooldown>k__BackingField: 0.42
   <WaitAfterAttackTimerCooldown>k__BackingField: 0.67
-  <AttackJumpForce>k__BackingField: 8.31
+  <AttackJumpForce>k__BackingField: 12.8
   <AttackPlayerDetector>k__BackingField: {fileID: 1563136828842039257}
   _maxHealth: 10
 --- !u!114 &8399339287989363627
