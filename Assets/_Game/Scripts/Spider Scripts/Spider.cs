@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(MovementAI))]
@@ -10,12 +9,14 @@ public class Spider : MonoBehaviour, IBurnable
     public Spider_PatrolState PatrolState { get; private set; }
     public Spider_AttackState AttackState { get; private set; }
     public Spider_AttachToPlayerState AttachToPlayerState { get; private set; }
+    public Spider_DieState DieState { get; private set; }
 
     private void InitStates()
     {
         PatrolState = new Spider_PatrolState(this);
         AttackState = new Spider_AttackState(this);
         AttachToPlayerState = new Spider_AttachToPlayerState(this);
+        DieState = new Spider_DieState(this);
     }
 
     #endregion
@@ -39,9 +40,6 @@ public class Spider : MonoBehaviour, IBurnable
     public MovementAI MovementAI { get; private set; }
     public Rigidbody2D Rb2d { get; private set; }
     public PlayerController PlayerController { get; set; }
-
-    public event Action OnDied;
-    //public event Action<int> OnBurn;
 
 
 
@@ -101,13 +99,7 @@ public class Spider : MonoBehaviour, IBurnable
 
         if (_health <= 0)
         {
-            Die();
+            StateMachine.ChangeState(DieState);
         }
-    }
-
-    private void Die()
-    {
-        Debug.Log("Spider is dead");
-        OnDied?.Invoke();
     }
 }

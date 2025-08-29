@@ -17,6 +17,8 @@ public class Spider_AttackState : Spider_BaseState
     public override void ExitState()
     {
         _spider.AttackPlayerDetector.OnPlayerDetected -= AttachToPlayer;
+        _spider.StopCoroutine(_attackCoroutine);
+
     }
 
     private void AttachToPlayer(PlayerController playerController)

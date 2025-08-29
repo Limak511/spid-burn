@@ -9,6 +9,7 @@ public class SpiderVisuals : MonoBehaviour
     private Animator _animator;
     private Spider _spider;
     private SpriteRenderer _renderer;
+    private bool _hasDied = false;
 
     private void Awake()
     {
@@ -17,34 +18,31 @@ public class SpiderVisuals : MonoBehaviour
         _renderer = GetComponent<SpriteRenderer>();
     }
 
+    private void Start()
+    {
+        _spider.DieState.OnDied += Die;
+    }
+
+    private void OnDestroy()
+    {
+        _spider.DieState.OnDied -= Die;
+    }
+
     private void Update()
     {
-        // Update body look at
-        _renderer.flipX = !_spider.IsHeadingLeft();
+        // Update body look at if spider is moving by x axis
+        if (Mathf.Abs(_spider.Rb2d.linearVelocity.x) > Mathf.Epsilon)
+        {
+            _renderer.flipX = !_spider.IsHeadingLeft();
+        }
 
         // Update moving
         _animator.SetBool(_isMovingHash, _spider.IsMoving());
     }
 
-    private void OnEnable()
-    {
-        //_spider.OnBurn += Burn;
-        _spider.OnDied += Die;
-    }
-
-    private void OnDisable()
-    {
-        //_spider.OnBurn -= Burn;
-        _spider.OnDied -= Die;
-    }
-
     private void Die()
     {
+        _hasDied = true;
         _animator.CrossFade(_dieHash, 0f, 0);
     }
-
-    /*private void Burn(int burnDamage)
-    {
-        _burnPS.Play();
-    }*/
 }
