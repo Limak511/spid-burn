@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +8,10 @@ public class Burner : MonoBehaviour
     private Vector3 _firePointLocalPosition;
     [SerializeField] private int _fireRaysCount = 5;
     [SerializeField] private float _fireRange = 2f;
+    [SerializeField] private float _fireRangeExpandSpeed = .5f;
+    private float _fireRangeLerp = 0f;
 
     public float FireSpreadAngle => _fireSpreadAngle;
-
 
 
 
@@ -28,7 +28,14 @@ public class Burner : MonoBehaviour
 
         if (GameInput.Instance.IsPlayerAttackPressed())
         {
+            // Expand fire range
+            _fireRangeLerp += Time.deltaTime / _fireRangeExpandSpeed;
             Burn();
+        }
+        else
+        {
+            // Reset fire range
+            _fireRangeLerp = 0f;
         }
     }
 
@@ -40,7 +47,7 @@ public class Burner : MonoBehaviour
         foreach (var fireDirection in GetFireDirections())
         {
             // Current direction hits
-            RaycastHit2D[] currentHits = Physics2D.RaycastAll(_firePoint.position, fireDirection, _fireRange);
+            RaycastHit2D[] currentHits = Physics2D.RaycastAll(_firePoint.position, fireDirection, Mathf.Lerp(0f, _fireRange, _fireRangeLerp));
 
             // Filter currentHits to avoid duplicates by raycasting in multiple directions
             foreach (var currentHit in currentHits)
@@ -105,6 +112,7 @@ public class Burner : MonoBehaviour
     [Header("Gizmos")]
     [Tooltip("Show fire rays always, even when attack is not pressed")]
     [SerializeField] private bool _showRays = false;
+
     private void OnDrawGizmos()
     {
         if (Application.isPlaying)
@@ -120,7 +128,7 @@ public class Burner : MonoBehaviour
             Gizmos.color = Color.green;
             foreach (var fireDirection in GetFireDirections())
             {
-                Gizmos.DrawRay(_firePoint.position, fireDirection * _fireRange);
+                Gizmos.DrawRay(_firePoint.position, fireDirection * Mathf.Lerp(0f, _fireRange, _fireRangeLerp));
             }
         }
         else
