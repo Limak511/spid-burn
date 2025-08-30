@@ -14,12 +14,14 @@ public class Spider_PatrolState : Spider_BaseState
     {
         _idleTimer = 0f;
         _patrolPointPosition = GetNewPatrolPointPosition();
+        _spider.PatrolPlayerDetector.Enable();
         _spider.PatrolPlayerDetector.OnPlayerDetected += OnPlayerDetected;
     }
 
     public override void ExitState()
     {
         _spider.PatrolPlayerDetector.OnPlayerDetected -= OnPlayerDetected;
+        _spider.PatrolPlayerDetector.Disable();
     }
 
     private void OnPlayerDetected(PlayerController playerController)

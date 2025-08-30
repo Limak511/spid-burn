@@ -12,11 +12,13 @@ public class Spider_AttackState : Spider_BaseState
     public override void EnterState()
     {
         _attackCoroutine = _spider.StartCoroutine(CO_Attack());
+        _spider.AttackPlayerDetector.Enable();
     }
 
     public override void ExitState()
     {
         _spider.AttackPlayerDetector.OnPlayerDetected -= AttachToPlayer;
+        _spider.AttackPlayerDetector.Disable();
         _spider.StopCoroutine(_attackCoroutine);
 
     }
