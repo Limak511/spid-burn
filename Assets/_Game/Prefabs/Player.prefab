@@ -5077,6 +5077,7 @@ MonoBehaviour:
   - {fileID: 3467666881472796620}
   - {fileID: 7634866373114415284}
   _onSpiderAttached: {fileID: 11400000, guid: 00aa7ce6fd25af442990e59eef5f1b76, type: 2}
+  _canAttachSpidersDebug: 1
 --- !u!1 &536915058316373686
 GameObject:
   m_ObjectHideFlags: 0

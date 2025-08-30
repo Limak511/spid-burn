@@ -26,8 +26,11 @@ public class Spider_PatrolState : Spider_BaseState
 
     private void OnPlayerDetected(PlayerController playerController)
     {
-        _spider.PlayerController = playerController;
-        _spider.StateMachine.ChangeState(_spider.AttackState);
+        if (playerController.GetComponent<PlayerSpiderAttacher>().CanAttachSpider())
+        {
+            _spider.PlayerController = playerController;
+            _spider.StateMachine.ChangeState(_spider.AttackState);
+        }
     }
 
     public override void FixedUpdateState()

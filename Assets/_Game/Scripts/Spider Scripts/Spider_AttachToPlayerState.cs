@@ -11,15 +11,7 @@ public class Spider_AttachToPlayerState : Spider_BaseState
     public override void EnterState()
     {
         _playerSpiderAttacher = _spider.PlayerController.GetComponent<PlayerSpiderAttacher>();
-
-        if (_playerSpiderAttacher.CanAttachSpider())
-        {
-            _playerSpiderAttacher.AttachSpider();
-            Object.Destroy(_spider.gameObject);
-        }
-        else
-        {
-            _spider.StateMachine.ChangeState(_spider.PatrolState);
-        }
+        _playerSpiderAttacher.AttachSpider();
+        Object.Destroy(_spider.gameObject);
     }
 }

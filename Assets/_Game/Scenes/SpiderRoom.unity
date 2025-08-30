@@ -2973,10 +2973,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9195335675762969031, guid: 4d35b4b7b929f9446a4222554a5c944c, type: 3}
-      propertyPath: _canAttachSpidersDebug
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
