@@ -21,4 +21,14 @@ public class PlayerDetector : MonoBehaviour
             OnPlayerDetected?.Invoke(playerController);
         }
     }
+
+    public void Enable()
+    {
+        _collider.enabled = true;
+    }
+
+    public void Disable()
+    {
+        _collider.enabled = false;
+    }
 }
