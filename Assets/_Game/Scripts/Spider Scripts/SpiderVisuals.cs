@@ -20,11 +20,25 @@ public class SpiderVisuals : MonoBehaviour
     private void Start()
     {
         _spider.DieState.OnDied += Die;
+        _spider.BurnState.OnBurnStarted += Burn;
+        _spider.BurnState.OnBurnFinished += StopBurning;
+    }
+
+    private void StopBurning()
+    {
+        _burnPS.Stop();
+    }
+
+    private void Burn()
+    {
+        _burnPS.Play();
     }
 
     private void OnDestroy()
     {
         _spider.DieState.OnDied -= Die;
+        _spider.BurnState.OnBurnStarted += Burn;
+        _spider.BurnState.OnBurnFinished += StopBurning;
     }
 
     private void Update()

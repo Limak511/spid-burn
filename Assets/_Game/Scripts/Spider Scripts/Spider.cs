@@ -9,6 +9,7 @@ public class Spider : MonoBehaviour, IBurnable
     public Spider_PatrolState PatrolState { get; private set; }
     public Spider_AttackState AttackState { get; private set; }
     public Spider_AttachToPlayerState AttachToPlayerState { get; private set; }
+    public Spider_BurnState BurnState { get; private set; }
     public Spider_DieState DieState { get; private set; }
 
     private void InitStates()
@@ -16,6 +17,7 @@ public class Spider : MonoBehaviour, IBurnable
         PatrolState = new Spider_PatrolState(this);
         AttackState = new Spider_AttackState(this);
         AttachToPlayerState = new Spider_AttachToPlayerState(this);
+        BurnState = new Spider_BurnState(this);
         DieState = new Spider_DieState(this);
     }
 
@@ -37,6 +39,14 @@ public class Spider : MonoBehaviour, IBurnable
     [Header("Health")]
     [SerializeField] private int _maxHealth = 10;
     private int _health;
+
+    [field: Header("Burning")]
+    [field: SerializeField] public MovementSO BurnMovementData { get; private set; }
+    [field: SerializeField] public float BurnTime { get; private set; } = 5f;
+    [field: SerializeField] public float BurnMoveTime { get; private set; } = .5f;
+
+
+
     public MovementAI MovementAI { get; private set; }
     public Rigidbody2D Rb2d { get; private set; }
     public PlayerController PlayerController { get; set; }
@@ -100,6 +110,10 @@ public class Spider : MonoBehaviour, IBurnable
         if (_health <= 0)
         {
             StateMachine.ChangeState(DieState);
+        }
+        else
+        {
+            StateMachine.ChangeState(BurnState);
         }
     }
 }
