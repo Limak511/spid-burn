@@ -51,7 +51,7 @@ public class Spider_PatrolState : Spider_BaseState
         }
 
         // when close to patrol point, switch to idle state
-        if (Vector2.Distance(_spider.transform.position, _patrolPointPosition) < _spider.PatrolSpotVisionRange)
+        if (Vector2.Distance(_spider.transform.position, _patrolPointPosition) < _spider.PatrolPointVisionRange)
         {
             _patrolPointPosition = GetNewPatrolPointPosition();
             _idleTimer = _spider.IdleTimerCooldown;

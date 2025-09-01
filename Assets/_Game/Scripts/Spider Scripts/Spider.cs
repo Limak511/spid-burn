@@ -24,7 +24,7 @@ public class Spider : MonoBehaviour, IBurnable
 
 
     [field: Header("Patrol")]
-    [field: SerializeField] public float PatrolSpotVisionRange { get; private set; } = .38f;
+    [field: SerializeField] public float PatrolPointVisionRange { get; private set; } = .38f;
     [field: SerializeField] public float IdleTimerCooldown { get; private set; } = 2f;
     [field: SerializeField] public PlayerDetector PatrolPlayerDetector { get; private set; }
 
@@ -86,7 +86,7 @@ public class Spider : MonoBehaviour, IBurnable
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, PatrolSpotVisionRange);
+        Gizmos.DrawWireSphere(transform.position, PatrolPointVisionRange);
     }
 
 

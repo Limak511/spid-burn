@@ -5238,7 +5238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0d8fe291b6077458ab4f8d29c7dec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoboSpider
-  <PatrolSpotVisionRange>k__BackingField: 0.38
+  <PatrolPointVisionRange>k__BackingField: 0.38
   <IdleTimerCooldown>k__BackingField: 1.4
   <PatrolPlayerDetector>k__BackingField: {fileID: 8109299600925163561}
   <WaitBeforeAttackTimerCooldown>k__BackingField: 0.42
