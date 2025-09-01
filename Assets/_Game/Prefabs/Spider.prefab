@@ -5224,7 +5224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2d96546f0f1a843ad4ea0a3d17fefa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementAI
-  _movementData: {fileID: 11400000, guid: defbe1b141220834298465692dee5b69, type: 2}
+  _defaultMovementData: {fileID: 11400000, guid: defbe1b141220834298465692dee5b69, type: 2}
   _nextWaypointDistance: 0.5
 --- !u!114 &3638476491563270482
 MonoBehaviour:

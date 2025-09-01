@@ -9,7 +9,7 @@ public class MovementAI : MonoBehaviour
     //[SerializeField] private float _maxSeeAhead = .5f;
     //[SerializeField] private LayerMask _avoidLayer;
     //[SerializeField] private float _avoidancePushAwayForce = 2f;
-    [SerializeField] private MovementSO _movementData;
+    [SerializeField] private MovementSO _defaultMovementData;
     [SerializeField] private float _nextWaypointDistance = .5f;
     private bool _reachedEndOfPath;
     private int _currentWaypoint = 0;
@@ -17,10 +17,16 @@ public class MovementAI : MonoBehaviour
     private Seeker _seeker;
     private float _lastRepath = float.NegativeInfinity;
     private Vector2 _direction;
+    private MovementSO _movementData;
 
     public void SetMovementData(MovementSO movementData)
     {
         _movementData = movementData;
+    }
+
+    public void ResetMovementData()
+    {
+        _movementData = _defaultMovementData;
     }
 
 
@@ -29,6 +35,7 @@ public class MovementAI : MonoBehaviour
     {
         _seeker = GetComponent<Seeker>();
         _seeker.pathCallback += OnPathComplete;
+        SetMovementData(_defaultMovementData);
     }
 
     private void OnDestroy()
@@ -133,13 +140,13 @@ public class MovementAI : MonoBehaviour
 
 
 
-    private void OnDrawGizmos()
-    {
-        if (Application.isPlaying)
-        {
-            // Local avoidance - see ahead vector
-            //Gizmos.color = Color.yellow;
-            //Gizmos.DrawRay(transform.position, _direction * _maxSeeAhead);
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if (Application.isPlaying)
+    //    {
+    //        // Local avoidance - see ahead vector
+    //        //Gizmos.color = Color.yellow;
+    //        //Gizmos.DrawRay(transform.position, _direction * _maxSeeAhead);
+    //    }
+    //}
 }
