@@ -26,6 +26,7 @@ public class PlayerSpiderAttacher : MonoBehaviour
             return;
         }
 
+        // Attach
         _attachedSpiders[_currentSpiderCount].SetActive(true);
         _currentSpiderCount++;
 
