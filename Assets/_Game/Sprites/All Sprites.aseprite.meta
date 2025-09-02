@@ -136,7 +136,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 46
+      y: 80
       width: 16
       height: 5
     spriteID: 56f2fd6cffe91f14fa8882d1a6e0b467
@@ -147,7 +147,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 46}
+    uvTransform: {x: 4, y: 80}
   - name: Spider_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0.26666668}
@@ -219,8 +219,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 4
+      x: 45
+      y: 52
       width: 10
       height: 4
     spriteID: 870f0620c66f8fe4783989bf378e6bfb
@@ -231,7 +231,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 4}
+    uvTransform: {x: 45, y: 52}
   - name: Player Run_Frame_0
     originalName: 
     pivot: {x: 0.71428573, y: 0.17777778}
@@ -240,8 +240,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 59
+      x: 28
+      y: 36
       width: 7
       height: 9
     spriteID: 10b649f79be35ef41a5d452c22a01fb4
@@ -252,7 +252,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 59}
+    uvTransform: {x: 28, y: 36}
   - name: Player Run_Frame_1
     originalName: 
     pivot: {x: 0.71428573, y: 0.2}
@@ -261,8 +261,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 110
+      x: 45
+      y: 4
       width: 7
       height: 8
     spriteID: 0c447ada75042ed4bafad7620abd29a7
@@ -273,7 +273,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 110}
+    uvTransform: {x: 45, y: 4}
   - name: Player Run_Frame_2
     originalName: 
     pivot: {x: 0.71428573, y: 0.17777778}
@@ -282,8 +282,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 76
+      x: 28
+      y: 53
       width: 7
       height: 9
     spriteID: 6f6a470775b3cf1418713f71ba28600b
@@ -294,7 +294,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
+    uvTransform: {x: 28, y: 53}
   - name: Player Run_Frame_3
     originalName: 
     pivot: {x: 0.71428573, y: 0.2}
@@ -303,8 +303,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 28
-      y: 4
+      x: 45
+      y: 20
       width: 7
       height: 8
     spriteID: 3189a4b4a4856ce4693568b0e048a1b5
@@ -315,7 +315,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 4}
+    uvTransform: {x: 45, y: 20}
   - name: Player Idle_Frame_0
     originalName: 
     pivot: {x: 0.71428573, y: 0.17777778}
@@ -324,8 +324,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
-      y: 93
+      x: 28
+      y: 70
       width: 7
       height: 9
     spriteID: e7f53d567fcca094d94d293f7fd82ac5
@@ -336,7 +336,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 93}
+    uvTransform: {x: 28, y: 70}
   - name: Player Idle_Frame_1
     originalName: 
     pivot: {x: 0.71428573, y: 0.2}
@@ -345,8 +345,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 28
-      y: 20
+      x: 45
+      y: 36
       width: 7
       height: 8
     spriteID: 4ed716babb7ad5b468c59a8fdafd2d6e
@@ -357,17 +357,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 20}
+    uvTransform: {x: 45, y: 36}
   - name: Gun
     originalName: 
-    pivot: {x: 0.08, y: 0.25}
+    pivot: {x: 0.1446348, y: 0.25025177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 90
+      x: 45
+      y: 102
       width: 7
       height: 4
     spriteID: ff44e630f0fcef94d99f745652b0b317
@@ -378,8 +378,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 90}
-  - name: Robo_Spider Idle_Frame_0
+    uvTransform: {x: 45, y: 102}
+  - name: RoboSpider_jump_Frame_0
     originalName: 
     pivot: {x: 0.5555556, y: 0.4}
     alignment: 9
@@ -387,11 +387,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 16
+      x: 28
+      y: 117
       width: 9
       height: 4
-    spriteID: 888bda61fff4dbb4f8df35a06b1fa24b
+    spriteID: 374ca5b0c70d0a047b06ed48f0d92066
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -399,8 +399,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 16}
-  - name: Robo_Spider Idle_Frame_1
+    uvTransform: {x: 28, y: 117}
+  - name: RoboSpider_jump_Frame_1
     originalName: 
     pivot: {x: 0.5555556, y: 0.4}
     alignment: 9
@@ -408,32 +408,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 28
-      width: 9
-      height: 4
-    spriteID: a32f63e00ab79f74ca215398946fd1ee
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 43, y: 28}
-  - name: Robo_Spider Idle_Frame_2
-    originalName: 
-    pivot: {x: 0.5714286, y: 0.32000002}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 43
+      x: 45
       y: 64
-      width: 7
-      height: 5
-    spriteID: 94d0bebf9e461d948aeb540ee5f63617
+      width: 9
+      height: 4
+    spriteID: 2cba84cbbcb83084ebe49e6f5eb8804a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -441,8 +420,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 64}
-  - name: Robo_Spider Idle_Frame_3
+    uvTransform: {x: 45, y: 64}
+  - name: RoboSpider_jump_Frame_2
     originalName: 
     pivot: {x: 0.5714286, y: 0.32000002}
     alignment: 9
@@ -450,11 +429,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 77
+      x: 45
+      y: 76
       width: 7
       height: 5
-    spriteID: bbde9d1e9d56acc43aa6c91d57bab776
+    spriteID: 57569c5b185f8e241a077718b2fe0c2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -462,20 +441,41 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 77}
-  - name: Robo_Spider Run_Frame_0
+    uvTransform: {x: 45, y: 76}
+  - name: RoboSpider_jump_Frame_3
     originalName: 
-    pivot: {x: 0.5555556, y: 0.4}
+    pivot: {x: 0.5714286, y: 0.32000002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
-      y: 40
+      x: 45
+      y: 89
+      width: 7
+      height: 5
+    spriteID: 8939a5e57ab3a8140b4d25aab31de3cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 45, y: 89}
+  - name: RoboSpider_idle_Frame_0
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 93
       width: 9
-      height: 4
-    spriteID: d13c7ba62d33de74fa73f20093c3bd82
+      height: 8
+    spriteID: 3b636653979a3a348ace96ad4385aabc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -483,20 +483,146 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 40}
-  - name: Robo_Spider Run_Frame_1
+    uvTransform: {x: 4, y: 93}
+  - name: RoboSpider_idle_Frame_1
     originalName: 
-    pivot: {x: 0.5555556, y: 0.53333336}
+    pivot: {x: 0.5555556, y: 0.17777778}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 43
+      x: 4
+      y: 46
+      width: 9
+      height: 9
+    spriteID: dd199bda09289614981cffbbc39b2736
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 46}
+  - name: RoboSpider_idle_Frame_2
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 109
+      width: 9
+      height: 8
+    spriteID: 777de6e5877c48244b885376fd4296ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 109}
+  - name: RoboSpider_idle_Frame_3
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.22857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 87
+      width: 9
+      height: 7
+    spriteID: 090fb288788239f43a3ae9f39e0f66a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 87}
+  - name: RoboSpider_run_Frame_0
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 9
+      height: 8
+    spriteID: 9085f6852e3d06c4093d78e4f6783c0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 4}
+  - name: RoboSpider_run_Frame_1
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.17777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 63
+      width: 9
+      height: 9
+    spriteID: 72925c6f04de4944b87afa0afc067cf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 63}
+  - name: RoboSpider_run_Frame_2
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 20
+      width: 9
+      height: 8
+    spriteID: dc5971d64649ff149a9f93d019d5938f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 20}
+  - name: RoboSpider_run_Frame_3
+    originalName: 
+    pivot: {x: 0.5555556, y: 0.22857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 28
       y: 102
       width: 9
-      height: 3
-    spriteID: 1924d07d8bd02ed49af42f96e286009f
+      height: 7
+    spriteID: 5417c8abd644352479e821967692a16e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -504,49 +630,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 43, y: 102}
-  - name: Robo_Spider Run_Frame_2
-    originalName: 
-    pivot: {x: 0.5555556, y: 0.4}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 43
-      y: 52
-      width: 9
-      height: 4
-    spriteID: fa6ee47c67e1de9469dd07947c8e49df
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 43, y: 52}
-  - name: Robo_Spider Run_Frame_3
-    originalName: 
-    pivot: {x: 0.5555556, y: 0.53333336}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 43
-      y: 113
-      width: 9
-      height: 3
-    spriteID: f4b674e76a5e29e49a390d4ea237963b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 43, y: 113}
+    uvTransform: {x: 28, y: 102}
   spriteSheetImportData: []
   tileSetImportData: []
   asepriteLayers:
@@ -740,17 +824,17 @@ ScriptedImporter:
     parentIndex: -1
   - layerIndex: 5
     uuid:
-      value0: 3352708560
+      value0: 1218403140
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Robo_Spider Idle
+    name: RoboSpider_jump
     layerFlags: 2
     layerType: 0
     blendMode: 0
     cells:
-    - name: Robo_Spider Idle_Frame_0
+    - name: RoboSpider_jump_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -758,8 +842,8 @@ ScriptedImporter:
         y: 0
         width: 9
         height: 4
-      spriteId: 888bda61fff4dbb4f8df35a06b1fa24b
-    - name: Robo_Spider Idle_Frame_1
+      spriteId: 374ca5b0c70d0a047b06ed48f0d92066
+    - name: RoboSpider_jump_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -767,8 +851,8 @@ ScriptedImporter:
         y: 0
         width: 9
         height: 4
-      spriteId: a32f63e00ab79f74ca215398946fd1ee
-    - name: Robo_Spider Idle_Frame_2
+      spriteId: 2cba84cbbcb83084ebe49e6f5eb8804a
+    - name: RoboSpider_jump_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -776,8 +860,8 @@ ScriptedImporter:
         y: 0
         width: 7
         height: 5
-      spriteId: 94d0bebf9e461d948aeb540ee5f63617
-    - name: Robo_Spider Idle_Frame_3
+      spriteId: 57569c5b185f8e241a077718b2fe0c2b
+    - name: RoboSpider_jump_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -785,59 +869,111 @@ ScriptedImporter:
         y: 0
         width: 7
         height: 5
-      spriteId: bbde9d1e9d56acc43aa6c91d57bab776
+      spriteId: 8939a5e57ab3a8140b4d25aab31de3cb
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   - layerIndex: 6
     uuid:
-      value0: 2163403931
+      value0: 1480525906
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: Robo_Spider Run
+    name: RoboSpider_idle
     layerFlags: 2
     layerType: 0
     blendMode: 0
     cells:
-    - name: Robo_Spider Run_Frame_0
+    - name: RoboSpider_idle_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
         width: 9
-        height: 4
-      spriteId: d13c7ba62d33de74fa73f20093c3bd82
-    - name: Robo_Spider Run_Frame_1
+        height: 8
+      spriteId: 3b636653979a3a348ace96ad4385aabc
+    - name: RoboSpider_idle_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
         width: 9
-        height: 3
-      spriteId: 1924d07d8bd02ed49af42f96e286009f
-    - name: Robo_Spider Run_Frame_2
+        height: 9
+      spriteId: dd199bda09289614981cffbbc39b2736
+    - name: RoboSpider_idle_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
         width: 9
-        height: 4
-      spriteId: fa6ee47c67e1de9469dd07947c8e49df
-    - name: Robo_Spider Run_Frame_3
+        height: 8
+      spriteId: 777de6e5877c48244b885376fd4296ff
+    - name: RoboSpider_idle_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
         width: 9
-        height: 3
-      spriteId: f4b674e76a5e29e49a390d4ea237963b
+        height: 7
+      spriteId: 090fb288788239f43a3ae9f39e0f66a0
+    linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
+    parentIndex: -1
+  - layerIndex: 7
+    uuid:
+      value0: 2594154555
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 0
+    name: RoboSpider_run
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: RoboSpider_run_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 9
+        height: 8
+      spriteId: 9085f6852e3d06c4093d78e4f6783c0c
+    - name: RoboSpider_run_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 9
+        height: 9
+      spriteId: 72925c6f04de4944b87afa0afc067cf6
+    - name: RoboSpider_run_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 9
+        height: 8
+      spriteId: dc5971d64649ff149a9f93d019d5938f
+    - name: RoboSpider_run_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 0
+        width: 9
+        height: 7
+      spriteId: 5417c8abd644352479e821967692a16e
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
