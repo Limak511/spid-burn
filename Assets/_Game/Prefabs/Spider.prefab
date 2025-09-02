@@ -137,9 +137,9 @@ MonoBehaviour:
   m_ShapePath:
   - {x: -0.19381231, y: -0.02993513, z: 0}
   - {x: -0.19780919, y: 0.2497702, z: 0}
-  - {x: 0.29683882, y: 0.24992317, z: 0}
+  - {x: 0.30967197, y: 0.25248986, z: 0}
   - {x: 0.29373717, y: -0.029934932, z: 0}
-  m_ShapePathHash: -1547985887
+  m_ShapePathHash: -582857194
   m_InstanceId: 0
   m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 0.049514815, y: 0.10999402, z: 0}
-      m_Extent: {x: 0.247324, y: 0.13992915, z: 0}
+      m_Center: {x: 0.05593139, y: 0.111277364, z: 0}
+      m_Extent: {x: 0.25374058, y: 0.1412125, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0
     m_FlipX: 0
@@ -5018,7 +5018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5384417324328517465
 Transform:
   m_ObjectHideFlags: 0
@@ -5063,7 +5063,7 @@ MonoBehaviour:
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
   m_UseNormalMap: 0
-  m_ShadowsEnabled: 1
+  m_ShadowsEnabled: 0
   m_ShadowIntensity: 0.75
   m_ShadowSoftness: 0.3
   m_ShadowSoftnessFalloffIntensity: 0.5
