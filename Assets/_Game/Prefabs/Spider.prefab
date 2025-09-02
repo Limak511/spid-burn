@@ -5415,7 +5415,7 @@ MonoBehaviour:
   <WaitAfterAttackTimerCooldown>k__BackingField: 0.67
   <AttackJumpForce>k__BackingField: 12.8
   <AttackPlayerDetector>k__BackingField: {fileID: 1563136828842039257}
-  _maxHealth: 10
+  _maxHealth: 2
   <BurnMovementData>k__BackingField: {fileID: 11400000, guid: 422a76cb3ea8c7546ab94e3de36945d2, type: 2}
   <BurnTime>k__BackingField: 5
   <BurnMoveTime>k__BackingField: 0.5
